@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "dgSpecHash": "p53adny1WmtBOIuZHQWBDyDo+yfETSj9t9B/FBRblI4reQqUkJr733doTu2ib+yEpveOZfg9jzTChthPVfN48A==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\library-test-backend\\IngresoSML2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leandro Cardozo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Leandro Cardozo\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Leandro Cardozo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Leandro Cardozo\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\3.1.32\\microsoft.netcore.app.host.win-x86.3.1.32.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Core\\bin\\Debug' doesn't exist.",
+      "libraryId": "Microsoft.EntityFrameworkCore"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Commands\\bin\\Debug' doesn't exist.",
+      "libraryId": "Microsoft.EntityFrameworkCore"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Core\\bin\\Debug' doesn't exist.",
+      "libraryId": "Microsoft.EntityFrameworkCore.InMemory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Commands\\bin\\Debug' doesn't exist.",
+      "libraryId": "Microsoft.EntityFrameworkCore.InMemory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Core\\bin\\Debug' doesn't exist.",
+      "libraryId": "Swashbuckle.AspNetCore"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Commands\\bin\\Debug' doesn't exist.",
+      "libraryId": "Swashbuckle.AspNetCore"
+    }
+  ]
+}
