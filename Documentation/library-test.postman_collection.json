@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "0e4d080a-bea1-4e78-8c7d-dd63203732d8",
+		"name": "library-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7520262"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:38668/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38668",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38668/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38668",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:49:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customerId\": 1,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"address\": \"123 Main St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 2,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\",\n        \"address\": \"456 Elm St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 3,\n        \"firstName\": \"Alice\",\n        \"lastName\": \"Johnson\",\n        \"address\": \"789 Maple St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 4,\n        \"firstName\": \"Michael\",\n        \"lastName\": \"Brown\",\n        \"address\": \"101 Pine St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 5,\n        \"firstName\": \"Emily\",\n        \"lastName\": \"Davis\",\n        \"address\": \"202 Oak St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 6,\n        \"firstName\": \"David\",\n        \"lastName\": \"Miller\",\n        \"address\": \"303 Cherry St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 7,\n        \"firstName\": \"Sarah\",\n        \"lastName\": \"Wilson\",\n        \"address\": \"404 Birch St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 8,\n        \"firstName\": \"Chris\",\n        \"lastName\": \"Taylor\",\n        \"address\": \"505 Cedar St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 9,\n        \"firstName\": \"Jessica\",\n        \"lastName\": \"Moore\",\n        \"address\": \"606 Dogwood St\",\n        \"invoices\": [],\n        \"loans\": []\n    },\n    {\n        \"customerId\": 10,\n        \"firstName\": \"Daniel\",\n        \"lastName\": \"White\",\n        \"address\": \"707 Fir St\",\n        \"invoices\": [],\n        \"loans\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\":\"Testing\",\r\n    \"LastName\":\"Testing\",\r\n    \"Address\":\"Testing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:38668/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38668",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customers Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Testing 2\",\r\n    \"LastName\": \"Testing 2\",\r\n    \"Address\": \"Testing 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:38668/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38668",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 17:54:52 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerId\": 13,\n    \"firstName\": \"Testing 2\",\n    \"lastName\": \"Testing 2\",\n    \"address\": \"Testing 2\",\n    \"invoices\": [],\n    \"loans\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerId\": 1,\r\n    \"BooksIds\": [1, 2]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:38668/api/invoices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38668",
+					"path": [
+						"api",
+						"invoices"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": 1,\r\n    \"BooksIds\": [1, 2]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:38668/api/invoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38668",
+							"path": [
+								"api",
+								"invoices"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "471"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 17:43:30 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"invoiceId\": 42,\n    \"customerId\": 1,\n    \"date\": \"2023-10-03T17:43:29.9640644Z\",\n    \"customer\": null,\n    \"invoiceItems\": [\n        {\n            \"invoiceItemId\": 64,\n            \"invoiceId\": 42,\n            \"loanId\": 64,\n            \"loan\": {\n                \"loanId\": 64,\n                \"bookId\": 1,\n                \"customerId\": 1,\n                \"returnDate\": \"2023-10-10T17:43:30.138174Z\",\n                \"book\": null,\n                \"customer\": null,\n                \"invoiceItems\": []\n            }\n        },\n        {\n            \"invoiceItemId\": 65,\n            \"invoiceId\": 42,\n            \"loanId\": 65,\n            \"loan\": {\n                \"loanId\": 65,\n                \"bookId\": 2,\n                \"customerId\": 1,\n                \"returnDate\": \"2023-10-10T17:43:30.1714585Z\",\n                \"book\": null,\n                \"customer\": null,\n                \"invoiceItems\": []\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:38668/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38668",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38668/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38668",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1114"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 18:50:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"bookId\": 1,\n        \"code\": \"HP1\",\n        \"title\": \"Harry Potter and the Sorcerer's Stone\",\n        \"publisher\": \"Bloomsbury\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 2,\n        \"code\": \"1984\",\n        \"title\": \"1984\",\n        \"publisher\": \"Secker & Warburg\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 3,\n        \"code\": \"LOTR1\",\n        \"title\": \"The Fellowship of the Ring\",\n        \"publisher\": \"Allen & Unwin\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 4,\n        \"code\": \"FDN\",\n        \"title\": \"Foundation\",\n        \"publisher\": \"Gnome Press\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 5,\n        \"code\": \"ABC\",\n        \"title\": \"The A.B.C. Murders\",\n        \"publisher\": \"Collins Crime Club\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 6,\n        \"code\": \"SHINING\",\n        \"title\": \"The Shining\",\n        \"publisher\": \"Doubleday\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 7,\n        \"code\": \"HAM\",\n        \"title\": \"Hamlet\",\n        \"publisher\": \"N/A\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 8,\n        \"code\": \"OSAR\",\n        \"title\": \"The Old Man and the Sea\",\n        \"publisher\": \"Scribner\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 9,\n        \"code\": \"TOM\",\n        \"title\": \"The Adventures of Tom Sawyer\",\n        \"publisher\": \"American Publishing Company\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    },\n    {\n        \"bookId\": 10,\n        \"code\": \"OT\",\n        \"title\": \"Oliver Twist\",\n        \"publisher\": \"Richard Bentley\",\n        \"bookAuthors\": [],\n        \"loans\": []\n    }\n]"
+				}
+			]
+		}
+	]
+}
