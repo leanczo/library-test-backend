@@ -24,11 +24,11 @@ En base al modelo normalizado en el punto anterior, escriba las consultas SQL pa
 5. Para cada lector, se debe visualizar cuál es su autor de preferencia (aquel autor que más libros ha retirado): Código de lector, nombre del lector, código de autor y autor.
 
 
-## 2. DESARROLLO
+## 2. Desarrollo
 Se deberán realizar las siguientes acciones propuestas, referidas a un sistema cuyo objetivo es la emisión de una factura (invoice) con sus correspondientes detalles (invoice items) relacionada a un cliente específico (customer).
 
 
-## 2.1. BACKEND
+## 2.1 Backend
 Para alcanzar el objetivo antes mencionado, se dispondrá de una estructura de proyecto en el lenguaje .NET CORE. Dentro del proyecto, se le deberá agregar la siguiente funcionalidad dentro del/los Controllers que considere necesarios:
 
 - Alta de Customer (Cliente)
@@ -37,7 +37,7 @@ Para alcanzar el objetivo antes mencionado, se dispondrá de una estructura de p
 
 Los puntos antes resueltos deberán ser utilizados para la resolución de la problemática propuesta en el punto siguiente.
 
-## 2.2. FRONTEND
+## 2.2 Frontend
 En base al siguiente modelo de interfaz (tentativa, aplique las mejoras que considere necesarias), se deberá seleccionar un cliente (desde un menú desplegable con la obtención de la información desde el servicio antes creado); y agregar los productos que conformarán parte de la factura (no pueden repetirse los mismos para la factura que se está confeccionando). 
 
 Una vez concluida la carga, mediante un botón se deberá enviar la información ya validada.
