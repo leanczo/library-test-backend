@@ -50,6 +50,7 @@ namespace IngresoSML2
             );
 
             services.AddScoped<CustomersService>();
+            services.AddScoped<InvoicesService>();
         }
 
 

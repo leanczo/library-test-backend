@@ -1,5 +1,4 @@
-﻿using IngresoSML2.Data;
-using IngresoSML2.Models;
+﻿using IngresoSML2.Models;
 using IngresoSML2.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +10,10 @@ namespace IngresoSML2.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly libraryContext dbContext;
         private readonly CustomersService _customersService;
 
-        public CustomersController(libraryContext dbContext, CustomersService customersService)
+        public CustomersController(CustomersService customersService)
         {
-            this.dbContext = dbContext;
             _customersService = customersService;
         }
 
