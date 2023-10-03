@@ -26,7 +26,7 @@ CREATE TABLE `authors` (
   `author_id` bigint NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`author_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,7 +45,7 @@ CREATE TABLE `book_authors` (
   KEY `authors_book_authors_fk_idx` (`author_id`),
   CONSTRAINT `authors_book_authors_fk` FOREIGN KEY (`author_id`) REFERENCES `authors` (`author_id`),
   CONSTRAINT `books_book_authors_fk` FOREIGN KEY (`book_id`) REFERENCES `books` (`book_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +77,7 @@ CREATE TABLE `customers` (
   `last_name` varchar(45) NOT NULL,
   `address` varchar(255) NOT NULL,
   PRIMARY KEY (`customer_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `invoice_items` (
   KEY `loans_invoice_item_idx` (`loan_id`),
   CONSTRAINT `invoices_invoice_item` FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`),
   CONSTRAINT `loans_invoice_item` FOREIGN KEY (`loan_id`) REFERENCES `loans` (`loan_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -113,7 +113,7 @@ CREATE TABLE `invoices` (
   PRIMARY KEY (`invoice_id`),
   KEY `customer_invoices_idx` (`customer_id`),
   CONSTRAINT `customer_invoices` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,13 +127,13 @@ CREATE TABLE `loans` (
   `loan_id` bigint NOT NULL AUTO_INCREMENT,
   `book_id` bigint NOT NULL,
   `customer_id` bigint NOT NULL,
-  `return_date` date DEFAULT NULL,
+  `return_date` date NOT NULL,
   PRIMARY KEY (`loan_id`),
   KEY `customers_loans_fk_idx` (`customer_id`),
   KEY `books_loans_fk_idx` (`book_id`),
   CONSTRAINT `books_loans_fk` FOREIGN KEY (`book_id`) REFERENCES `books` (`book_id`),
   CONSTRAINT `customers_loans_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -145,4 +145,4 @@ CREATE TABLE `loans` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-03  9:39:04
+-- Dump completed on 2023-10-03 17:20:31
