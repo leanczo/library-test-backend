@@ -21,9 +21,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Commands\\bin\\Debug": {},
-          "C:\\Users\\Leandro Cardozo\\Documents\\GitHub\\uther-api\\UtherAPI.Core\\bin\\Debug": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

@@ -1,11 +1,7 @@
 ﻿using IngresoSML2.Data;
 using IngresoSML2.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace IngresoSML2.Controllers
@@ -24,11 +20,7 @@ namespace IngresoSML2.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] InvoicePostModel pm)
         {
-            // TODO
+            throw new NotImplementedException();
         }
-
-
-        
-
     }
 }
