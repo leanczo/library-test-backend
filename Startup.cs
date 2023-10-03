@@ -1,4 +1,5 @@
 using IngresoSML2.Data;
+using IngresoSML2.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Pomelo.EntityFrameworkCore.MySql.Storage;
 using System;
+using System.Text.Json.Serialization;
 
 namespace IngresoSML2
 {
@@ -26,7 +29,12 @@ namespace IngresoSML2
             {
                 options.AddPolicy("_corsCrossPort", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
-            services.AddControllers();
+            services.AddControllers()
+       .AddNewtonsoftJson(options =>
+       {
+           options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+       });
+
 
             services.AddSwaggerGen(c =>
             {
@@ -36,7 +44,12 @@ namespace IngresoSML2
                     Version = "v1"
                 });
             });
-            services.AddDbContext<libraryContext>(opt => opt.UseInMemoryDatabase("library"));
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<libraryContext>(opt =>
+                 opt.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))) 
+            );
+
+            services.AddScoped<CustomersService>();
         }
 
 
@@ -99,5 +112,6 @@ namespace IngresoSML2
                 });
             });
         }
+
     }
 }

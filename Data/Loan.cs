@@ -15,7 +15,7 @@ namespace IngresoSML2.Data
         public long LoanId { get; set; }
         public long BookId { get; set; }
         public long CustomerId { get; set; }
-        public DateTime? ReturnDate { get; set; }
+        public DateTime ReturnDate { get; set; }
 
         public virtual Book Book { get; set; }
         public virtual Customer Customer { get; set; }

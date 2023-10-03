@@ -8,11 +8,11 @@ namespace IngresoSML2.Controllers
 {
     [Route("/api/invoice")]
     [ApiController]
-    public class InvoiceController : ControllerBase
+    public class InvoicesController : ControllerBase
     {
         private readonly libraryContext dbContext;
 
-        public InvoiceController(libraryContext dbContext)
+        public InvoicesController(libraryContext dbContext)
         {
             this.dbContext = dbContext;
         }
