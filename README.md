@@ -38,7 +38,9 @@ Para alcanzar el objetivo antes mencionado, se dispondrá de una estructura de p
 Los puntos antes resueltos deberán ser utilizados para la resolución de la problemática propuesta en el punto siguiente.
 
 ## 2.2 Frontend
-En base al siguiente modelo de interfaz (tentativa, aplique las mejoras que considere necesarias), se deberá seleccionar un cliente (desde un menú desplegable con la obtención de la información desde el servicio antes creado); y agregar los productos que conformarán parte de la factura (no pueden repetirse los mismos para la factura que se está confeccionando). 
+En base al siguiente modelo de interfaz (tentativa, aplique las mejoras que considere necesarias), se deberá seleccionar un cliente (desde un menú desplegable con la obtención de la información desde el servicio antes creado); y agregar los productos que conformarán parte de la factura (no pueden repetirse los mismos para la factura que se está confeccionando).
+
+![Alt text](./Documentation/preview-frontend.png)
 
 Una vez concluida la carga, mediante un botón se deberá enviar la información ya validada.
 
@@ -174,3 +176,6 @@ ORDER BY c.customer_id;
 
 ### Create invoice
 ![Alt text](./Documentation/create-invoice.png)
+
+### Get books
+![Alt text](./Documentation/get-books.png)

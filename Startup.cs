@@ -7,9 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Pomelo.EntityFrameworkCore.MySql.Storage;
 using System;
-using System.Text.Json.Serialization;
 
 namespace IngresoSML2
 {
@@ -46,11 +44,12 @@ namespace IngresoSML2
             });
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<libraryContext>(opt =>
-                 opt.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21))) 
+                 opt.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21)))
             );
 
             services.AddScoped<CustomersService>();
             services.AddScoped<InvoicesService>();
+            services.AddScoped<BooksService>();
         }
 
 
