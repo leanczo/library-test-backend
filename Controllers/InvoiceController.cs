@@ -10,9 +10,9 @@ namespace IngresoSML2.Controllers
     [ApiController]
     public class InvoiceController : ControllerBase
     {
-        private readonly AppDbContext dbContext;
+        private readonly libraryContext dbContext;
 
-        public InvoiceController(AppDbContext dbContext)
+        public InvoiceController(libraryContext dbContext)
         {
             this.dbContext = dbContext;
         }

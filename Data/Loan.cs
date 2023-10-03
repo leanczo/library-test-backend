@@ -5,17 +5,19 @@ using System.Collections.Generic;
 
 namespace IngresoSML2.Data
 {
-    public partial class Invoice
+    public partial class Loan
     {
-        public Invoice()
+        public Loan()
         {
             InvoiceItems = new HashSet<InvoiceItem>();
         }
 
-        public long InvoiceId { get; set; }
+        public long LoanId { get; set; }
+        public long BookId { get; set; }
         public long CustomerId { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime? ReturnDate { get; set; }
 
+        public virtual Book Book { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual ICollection<InvoiceItem> InvoiceItems { get; set; }
     }

@@ -1,14 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
+
+#nullable disable
 
 namespace IngresoSML2.Data
 {
-    public class InvoiceItem
+    public partial class InvoiceItem
     {
-        public int InvoiceItemId { get; set; }
-        public int InvoiceId { get; set; }
-        public string ProductCode { get; set; }
+        public long InvoiceItemId { get; set; }
+        public long InvoiceId { get; set; }
+        public long LoanId { get; set; }
 
-        [ForeignKey("InvoiceId")]
         public virtual Invoice Invoice { get; set; }
+        public virtual Loan Loan { get; set; }
     }
 }

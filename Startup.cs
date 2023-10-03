@@ -36,7 +36,7 @@ namespace IngresoSML2
                     Version = "v1"
                 });
             });
-            services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("library"));
+            services.AddDbContext<libraryContext>(opt => opt.UseInMemoryDatabase("library"));
         }
 
 
