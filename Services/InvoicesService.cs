@@ -1,6 +1,5 @@
 ﻿using IngresoSML2.Data;
 using IngresoSML2.Models;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 
@@ -55,7 +54,7 @@ namespace IngresoSML2.Services
 
                 return newInvoice;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 await transaction.RollbackAsync();
