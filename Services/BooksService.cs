@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace IngresoSML2.Services
 {
-    public class BooksService
+    public class BooksService : IBooksService
     {
         private readonly libraryContext _dbContext;
 
